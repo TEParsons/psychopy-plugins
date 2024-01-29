@@ -19,8 +19,6 @@ jobs:
         
     - name: Build and Commit
       run: |
-        touch docs/.nojekyll
-        git add docs/.nojekyll
         sphinx-build -M html ./docs ./docs -a
         git config --global user.email "<>"
         git config --global user.name "$GITHUB_ACTOR"
