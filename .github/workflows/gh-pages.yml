@@ -19,7 +19,7 @@ jobs:
         
     - name: Build and Commit
       run: |
-        python sphinx-build -M html ./docs ./docs -a
+        sphinx-build -M html ./docs ./docs -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
