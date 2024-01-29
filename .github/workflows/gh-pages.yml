@@ -20,6 +20,10 @@ jobs:
     - name: Build and Commit
       run: |
         sphinx-build -M html ./src ./docs -a
+        git config --global user.email "<>"
+        git config --global user.name "$GITHUB_ACTOR"
+        git add --all
+        git commit --all -m "Build"
         git commit --all -m "Build"
     - name: Push changes
       uses: ad-m/github-push-action@master
