@@ -7,7 +7,7 @@
 
     <title>About PsychoPy Plugins &#8212; PsychoPy Plugins v0.0.1</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=536c50fe" />
-    <link rel="stylesheet" type="text/css" href="_static/psychopy.css?v=ac8d185b" />
+    <link rel="stylesheet" type="text/css" href="_static/psychopy.css?v=b9f4e6dd" />
     <script src="_static/documentation_options.js?v=d20be8f5"></script>
     <script src="_static/doctools.js?v=b682be12"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -15,6 +15,7 @@
     <script src="_static/js/jquery-fix.js"></script>
     <script src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <script src="_static/bootstrap-sphinx.js"></script>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="PsychoPy Plugins Directory" href="directory.html" />
@@ -129,7 +130,39 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 content">
+    <div class="col-md-3">
+      <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">About PsychoPy Plugins</a><ul>
+<li><a class="reference internal" href="#history">History</a></li>
+<li><a class="reference internal" href="#why-plugins">Why Plugins?</a></li>
+<li><a class="reference internal" href="#installing-plugins">Installing plugins</a></li>
+<li><a class="reference internal" href="#installing-plugins-on-an-offline-machine">Installing plugins on an offline machine</a></li>
+</ul>
+</li>
+</ul>
+
+  <li>
+    <a href="index.html" title="Previous Chapter: PsychoPy Plugins"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; PsychoPy Plugins</span>
+    </a>
+  </li>
+  <li>
+    <a href="directory.html" title="Next Chapter: PsychoPy Plugins Directory"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">PsychoPy Plug... &raquo;</span>
+    </a>
+  </li>
+<div id="sourcelink">
+  <a href="https://github.com/psychopy/psychopy/blob/master/docs/source/basics.rst"
+     rel="nofollow">Source</a>
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+      </div>
+    </div>
+    <div class="col-md-9 content">
       
   <section id="about-psychopy-plugins">
 <h1>About PsychoPy Plugins<a class="headerlink" href="#about-psychopy-plugins" title="Link to this heading">¶</a></h1>
@@ -147,7 +180,59 @@
 </section>
 <section id="installing-plugins">
 <h2>Installing plugins<a class="headerlink" href="#installing-plugins" title="Link to this heading">¶</a></h2>
-<p>You can install plugins using the <cite>&gt;tools&gt;plugins</cite> menu item in the PsychoPy application.</p>
+<p>To install plugins in PsychoPy:</p>
+<ul class="simple">
+<li><p>Select the <cite>Tools</cite> tab</p></li>
+<li><p>Select <cite>Plugin/packages Manager</cite> from the menu</p></li>
+</ul>
+<figure class="align-default">
+<img alt="_images/PluginsAndPackagesManager.png" src="_images/PluginsAndPackagesManager.png" />
+</figure>
+<ul class="simple">
+<li><p>Find the plugin that you want and select <cite>Install</cite></p></li>
+</ul>
+<p>If you would like to install a plugin from a file (e.g. a .whl file):</p>
+<ul class="simple">
+<li><p>In <cite>Plugin/packages Manager</cite>, select the <cite>Packages</cite> tab</p></li>
+<li><p>At the bottom left of the window, select <cite>Install from file</cite> and choose the relevant file to install, or select <cite>Open PIP Terminal</cite> and run a PIP install</p></li>
+</ul>
+<figure class="align-default">
+<img alt="_images/PackagesTab.png" src="_images/PackagesTab.png" />
+</figure>
+</section>
+<section id="installing-plugins-on-an-offline-machine">
+<h2>Installing plugins on an offline machine<a class="headerlink" href="#installing-plugins-on-an-offline-machine" title="Link to this heading">¶</a></h2>
+<p>If you need to use plugins on a machine that is not connected to the internet, follow these steps:</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Identify which plugin you would like to install:</dt><dd><ul class="simple">
+<li><p>Go on PsychoPy on a machine that is connected to the internet</p></li>
+<li><p>Click on the <cite>Tools</cite> tab and select <cite>Plugin/packages Manager</cite></p></li>
+<li><p>Find the relevant plugin from the list</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Download the wheel (.whl) file on a networked computer:</dt><dd><ul class="simple">
+<li><p>Visit <a href="#id1"><span class="problematic" id="id2">`Pypi.org&lt;Pypi.org&gt;`_</span></a> and search for your selected plugin using the search bar</p></li>
+<li><p>Download the wheel (.whl) file</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Transfer the wheel (.whl) file to an external storage device (e.g. a memory stick)</p></li>
+<li><p>Connect the external storage device to the non-networked computer</p></li>
+<li><dl class="simple">
+<dt>Install the plugin from the wheel (.whl) file:</dt><dd><ul class="simple">
+<li><p>In PsychoPy (on the non-networked computer) click on the <cite>Tools</cite> tab and select <cite>Plugin/packages Manager</cite></p></li>
+<li><p>Select the <cite>Packages</cite> tab</p></li>
+<li><p>In the lower left of the window, click <cite>Install from file</cite> and select the downloaded wheel (.whl) file</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
 </section>
 </section>
 
@@ -171,8 +256,8 @@
           &copy; 2002-2018 <a href="https://www.peirce.org.uk/">Jonathan Peirce</a><br/>
           &copy; 2019 <a href="https://opensciencetools.org/">Open Science Tools Ltd.</a><br/><br/>
         PsychoPy<sup>®</sup> and Pavlovia<sup>®</sup> are registered trademarks of Open Science Tools Ltd.<br/>
-        Last updated on Feb 15, 2024.<br/>
-        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.2.6.<br/><br/>
+        Last updated on Oct 03, 2024.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.0.2.<br/><br/>
     </span>
 
     <a href="http://www.nottingham.ac.uk/"><img src="_static/Nottingham Supported.png", alt="Uni of Nottingham" width=250></a>
